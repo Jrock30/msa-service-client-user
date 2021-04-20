@@ -1,0 +1,13 @@
+server:
+  port: 9001 # MSA Service
+
+spring:
+  application:
+    name: user-service
+
+eureka:
+  client:
+    register-with-eureka: true # 이 서비스를 eureka client로 등록하겠다.
+    fetch-registry: true
+    service-url: # Eureka 서버의 위치
+      defaultZone: http://127.0.0.1:8761/eureka # 서버의 위치 값
