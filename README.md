@@ -1,9 +1,14 @@
-# Service Discovery Client Netflix Eureka(Micro Service)
+# Service Discovery Client (User Service)
 - - -
 ## 소프트웨어 구성
 1. OpenJDK 11
 2. Spring Boot 2.4.5
-3. Netflix-Eureka-Client
+3. Spring Web
+4. Netflix-Eureka-Client
+5. Spring Boot DevTools
+6. Spring Data Jpa
+7. H2 Database
+8. org.modelmapper 2.3.8
 - - -
 - Netflix Eureka Client Setting
 - - -
@@ -16,4 +21,7 @@ Build
  * Maven Package After jar Build
 > - mvn clean
 > - mvn compile package
-> - java -jar -Dserver.port={port} ./target/user-service-0.1.jar   // nohub 으로 할 것
+> - java -jar -Dserver.port={port} ./target/user-service-0.1.jar
+- - -
+## User Service  
+- 회원 API
