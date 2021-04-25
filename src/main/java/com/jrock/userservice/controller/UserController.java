@@ -18,7 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user-service")
+//@RequestMapping("/user-service")
+@RequestMapping("/") // gateway 에 RewritePath 를 설정하면 앞에 prefix 를 제거 해도 된다.
 public class UserController {
 
     private Environment env;

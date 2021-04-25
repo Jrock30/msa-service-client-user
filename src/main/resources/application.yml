@@ -32,4 +32,4 @@ greeting:
 
 logging:
   level:
-    com.jrock.userservice: INFO
+    com.jrock.userservice: DEBUG
