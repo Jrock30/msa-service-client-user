@@ -33,3 +33,7 @@ greeting:
 logging:
   level:
     com.jrock.userservice: DEBUG
+
+token:
+  expiration_time: 86400000 # 1일
+  secret: user_token

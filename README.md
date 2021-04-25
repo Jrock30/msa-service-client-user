@@ -37,9 +37,20 @@ Build
 </pre>
 - 회원 목록 조회
 <pre>
-  GET /user-service/users
+  GET /user-service/users (Spring Gateway)
+  GET /users
 </pre>
 - 회원 조회
 <pre>
-  GET /user-service/users/{userId}
+  GET /user-service/users/{userId} (Spring Gateway)
+  GET /users/{userId}
+</pre>
+- 로그인 (스프링시큐리티 필터)
+<pre>
+  POST /users-service/login (Spring Gateway)
+  POST /login
+  {
+    "email": "test001.test.com",
+    "password": "test1234"
+  }
 </pre>
