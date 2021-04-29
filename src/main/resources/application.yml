@@ -34,6 +34,13 @@ logging:
   level:
     com.jrock.userservice: DEBUG
 
-token:
-  expiration_time: 86400000 # 1일
-  secret: user_token
+
+#config server에서 가져옴
+#token:
+#  expiration_time: 86400000 # 1일
+#  secret: user_token
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans # 포함 시키고자 하는 EndPoint (actuator 등록), refresh 는 post 방식으로 날려야함

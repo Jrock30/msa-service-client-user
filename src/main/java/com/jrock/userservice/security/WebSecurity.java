@@ -26,6 +26,8 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
 //        http.authorizeRequests().antMatchers("/users/**").permitAll();
+        http.authorizeRequests().antMatchers("/actuator/**").permitAll(); // actuator 모든 접근 허용, APP 상태 값 확인 가능(spring-boot-starter-actuator)
+
         http.authorizeRequests().antMatchers("/**")
                 .hasIpAddress("172.30.1.34") // IP 제약조건
                 .and()
