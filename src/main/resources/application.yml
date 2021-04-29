@@ -5,6 +5,11 @@ server:
 spring:
   application:
     name: user-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   h2:
     console:
       enabled: true
@@ -43,4 +48,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh, health, beans # 포함 시키고자 하는 EndPoint (actuator 등록), refresh 는 post 방식으로 날려야함
+        include: refresh, health, beans, busrefresh # 포함 시키고자 하는 EndPoint (actuator 등록), refresh 는 post 방식으로 날려야함
