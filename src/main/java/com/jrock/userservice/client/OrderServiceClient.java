@@ -18,6 +18,6 @@ public interface OrderServiceClient {
     /**
      *  요청할 Endpoint pull
      */
-    @GetMapping("/order-service/{userId}/ordersd")
+    @GetMapping("/order-service/{userId}/orders")
     List<ResponseOrder> getOrders(@PathVariable String userId);
 }
