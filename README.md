@@ -9,10 +9,11 @@
 6.  Spring Data Jpa
 7.  H2 Database
 8.  org.modelmapper 2.3.8
-9.  spring-cloud-starter-config
-10. spring-cloud-starter-bootstrap
-11. spring-boot-starter-actuator
+9.  Spring Cloud Stater Config
+10. Spring Cloud Stater Bootstrap
+11. Spring Cloud Stater Actuator
 12. Spring Cloud Starter Bus AMQP
+13. Spring Cloud Stater OpenFeign
 - - -
 - Netflix Eureka Client Setting
 - - -
@@ -68,3 +69,8 @@ Build
 <pre>
   POST http://127.0.0.1:8000/user-service/actuator/busrefresh  ( Config Server, User Service 일괄 자동 적용 )
 </pre>
+
+- Rest Template
+  * @LoadBalance
+- Feign Client
+  * Exception 처리
