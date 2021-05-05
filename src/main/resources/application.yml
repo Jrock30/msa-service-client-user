@@ -38,7 +38,7 @@ greeting:
 
 logging:
   level:
-    com.jrock.userservice: DEBUG
+    com.jrock.userservice.client: DEBUG
 
 
 #config server에서 가져옴
